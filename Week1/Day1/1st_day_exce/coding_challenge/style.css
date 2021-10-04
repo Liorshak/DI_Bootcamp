@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: rgb(42 164 219 / 54%);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.logo {
+  height: 48px;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  display: inline-block;
+}
+header {
+  height: 70px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  margin: 12px 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  transition: all 0.5s;
+}
+li:hover {
+  font-size: 1.5rem;
+  
+}
+
+section {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(https://www.pixelstalk.net/wp-content/uploads/images3/Super-Hulk-Background-for-Desktop-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+}
+
+h1 {
+  position: absolute;
+  top: 150px;
+  left: 70px;
+
+  font-size: 3rem;
+}
+
+p {
+  position: absolute;
+  left: 70px;
+  top: 300px;
+  max-width: 400px;
+}
+
+footer {
+  height: 70px;
+}
+.footer {
+  justify-content: space-around;
+}
+
+.footer a {
+  
+  font-size: 1.1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
