@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 5px;
+}
+p {
+    color:azure;
+    background-color:rgba(35, 35, 185, 0.692);
+    text-align:center;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+h1 {
+    text-align: center;
+    color:darkorange;
+    text-shadow: 2px 2px 2px rgb(0,0,0, 0.7);
+    border: 0px 3px 0px 3px solid rgba(49, 30, 30, 0.733);
+}
+
+#flag-home {
+    display: block;
+    
+    height: 200px;
+    margin: auto;
+    width: 50%;
+  
+    
+}
+
+.flag {
+    display: inline-block;
+    width:33%;
+    height: 200px;
+    border: 1px solid black;
+    margin: -2px;
+    padding: 0px;
+
+}
+.blue {
+    background-color: blue;
+    
+}
+.white {
+    background-color: white;
+}
+.red {
+    background-color: red;
+}
+
+.try {
+    color: blue;
+    text-align: justify;
+    text-indent: 50px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
