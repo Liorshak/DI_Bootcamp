@@ -7,20 +7,21 @@ body {
 }
 
 .logo {
-  height: 48px;
+  height: 8vh;
   position: absolute;
   top: 15px;
-  left: 50px;
+  left: 4vw;
   display: inline-block;
 }
 header {
-  height: 70px;
+  height: 10vh;
 }
 
 ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  
 }
 
 a {
@@ -29,15 +30,15 @@ a {
 }
 
 li {
-  margin: 12px 50px;
-  font-size: 1.3rem;
+  padding: 1vh 4vw;
+  font-size: 2vw;
   font-weight: bold;
   text-transform: uppercase;
 
   transition: all 0.5s;
 }
 li:hover {
-  font-size: 1.5rem;
+  font-size: 2.5vw;
   
 }
 
@@ -52,7 +53,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 600px;
+  min-height: 80vh;
 }
 
 h1 {
@@ -60,27 +61,72 @@ h1 {
   top: 150px;
   left: 70px;
 
-  font-size: 3rem;
+  font-size: 4vw;
 }
 
 p {
   position: absolute;
   left: 70px;
   top: 300px;
-  max-width: 400px;
+  max-width: 40vw;
+  font-size: 2vw;
+  overflow: hidden;
 }
 
 footer {
-  height: 70px;
+  height: 10vh;
 }
 .footer {
   justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .footer a {
   
-  font-size: 1.1rem;
+  font-size: 2vw;
   border: 1px solid white;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 1vw 2vw;
 }
+
+@media all and (min-width: 1024px)  {
+  body {
+    background-color: aqua;
+  }
+  h1 {
+    font-size: 5vh;
+  }
+  p{
+    font-size: 3vh;
+    
+  }
+ }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+
+  body {
+    background-color: pink;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  body {
+    background-color: gold;
+  }
+ }
+
+@media all and (max-width: 480px) {
+  body {
+    background-color: grey;
+  }
+  h1 {
+    font-size: 5vh;
+  }
+  p{
+    font-size: 2vh;
+    max-width: 90%;
+    left: 2vw;
+    
+  }
+ }
