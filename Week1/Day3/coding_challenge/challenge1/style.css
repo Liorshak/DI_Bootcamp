@@ -1,0 +1,28 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.main {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid black;
+  height: 240px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 0.75;
+}
+
+.box {
+  background-color: yellow;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  margin: 5px;
+}
