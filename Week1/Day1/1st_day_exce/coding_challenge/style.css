@@ -94,8 +94,8 @@ footer {
   body {
     background-color: aqua;
   }
-  h1 {
-    font-size: 5vh;
+  /* h1 {
+    font-size: 5vh; */
   }
   p{
     font-size: 3vh;

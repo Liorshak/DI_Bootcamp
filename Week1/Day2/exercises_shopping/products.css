@@ -1,55 +1,50 @@
-#main { background-color: white;
-    width: 100%;
-    min-height: 80vh; 
-    position: relative;
+#main {
+  background-color: white;
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
 }
 
-li{
-    display: inline-block;
+li {
+  display: inline-block;
 }
-ol{
-    overflow:hidden;
-    margin-top:0px;
-    
-    text-align: center;
-   
-    
+ol {
+  overflow: hidden;
+  margin-top: 0px;
 
-    
+  text-align: center;
 }
 .origiprice {
-    text-decoration: line-through;
-    font-size:0.9rem;
-    color: black;
-    display:inline-block;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  color: black;
+  display: inline-block;
 }
 span {
-    color:red;
-    text-decoration: none;
-    font-weight: bold;
-    font-size:1.1rem;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .product {
-background-image: url(https://www.redwolf.in/image/catalog/mobile-covers/apple-iphone-x/apple-iphone-x-friends-doodle-mobile-phone-cover-india.jpg);
-background-size: cover;
-background-position: center;
-height:30vh;
-width:13vw;
-border: 1px solid black;
-
+  background-image: url(https://www.redwolf.in/image/catalog/mobile-covers/apple-iphone-x/apple-iphone-x-friends-doodle-mobile-phone-cover-india.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  width: 13vw;
+  border: 1px solid black;
 }
 
-
-.cart{
-color: black;
-font-size: 0.8rem;
-border: 1px solid black;
-border-radius: 15px;
-padding:5px;
-transition: all 0.5s;
+.cart {
+  color: black;
+  font-size: 0.8rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  transition: all 0.5s;
 }
 
-.cart:hover{
-    background-color:goldenrod;
+.cart:hover {
+  background-color: goldenrod;
 }
