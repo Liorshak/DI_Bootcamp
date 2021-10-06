@@ -1,0 +1,63 @@
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  margin: auto;
+
+  grid-template-columns: 1.5fr 1.5fr 1.2fr;
+  grid-template-rows: 0.5fr 1.5fr 1fr 1fr 0.8fr 0.5fr;
+  grid-gap: 10px 5px;
+  height: 80vh;
+  width: 60vw;
+  grid-template-areas:
+    "header header header"
+    "hero main main"
+    "bar main main"
+    "bar extra extra"
+    "image image post"
+    "footer footer footer";
+}
+
+div {
+  text-align: center;
+  font-size: 1.25em;
+  padding: 10px;
+}
+
+.header {
+  grid-area: header;
+  background-color: blue;
+}
+.hero {
+  grid-area: hero;
+  background-color: purple;
+}
+.main {
+  grid-area: main;
+  background-color: goldenrod;
+}
+.sidebar {
+  grid-area: bar;
+  background-color: lightgreen;
+}
+.extra {
+  grid-area: extra;
+  background-color: grey;
+}
+.image {
+  grid-area: image;
+  background-color: green;
+}
+.post {
+  grid-area: post;
+  background-color: pink;
+}
+.footer {
+  grid-area: footer;
+  background-color: orange;
+}
