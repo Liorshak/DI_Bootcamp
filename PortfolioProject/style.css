@@ -93,7 +93,7 @@ a {
     grid-area:contact;
 }
 #projects img {width:20vw;}
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .change_sm {
     display: flex;
     flex-direction: column;
