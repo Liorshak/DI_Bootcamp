@@ -44,7 +44,7 @@ a {
   margin: auto;
 
   grid-template-columns: 1.5fr 1.5fr 1.2fr;
-  grid-template-rows: 0.5fr 1fr 0.5fr 1fr 1fr 0.3fr ;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.8fr 1fr 0.3fr ;
   grid-gap: 10px 5px;
   /* height: 80vh; */
   width: 100%;
@@ -89,18 +89,24 @@ a {
 .footer {
   grid-area: footer;
 }
-.contacty {
+.contacTy {
     grid-area:contact;
 }
-
+#projects img {width:20vw;}
 @media all and (max-width: 768px) {
   .change_sm {
     display: flex;
     flex-direction: column;
+    
   }
+  .sm{
+    width:100vh;
+    align-self: center;
+  }
+  #projects img {width:80vw;}
 }
 
-#projects img {width:20vw;}
+
 
 /* .part{
     border: 1px solid black;
