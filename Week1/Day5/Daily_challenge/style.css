@@ -1,0 +1,82 @@
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: cornflowerblue;
+    margin: 50px;
+    border: 1px solid black;
+    transition: all 1s ease;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div { 
+    margin:0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.fade{
+    opacity: 0.5;
+}
+
+.fade:hover {
+
+    opacity: 1;
+}
+
+.colorChange:hover {
+    background-color: hotpink;
+}
+
+.grow:hover {
+    transform:scale(1.2)
+}
+
+.shrink:hover{
+    transform:scale(0.8)
+}
+
+.rotate:hover{
+    transform:rotate(-30deg)
+}
+
+.toCircle:hover{
+    border-radius:50%
+}
+
+.shadow:hover{
+    box-shadow: 10px 10px rgba(128, 128, 128, 0.418);
+}
+
+.swing:hover{
+    animation: swing 1s;
+}
+
+@keyframes swing {
+
+    15% {
+        transform:translateX(10px);
+    }
+
+    30% {
+        transform:translateX(-10px);
+    }
+
+    45% {
+        transform:translateX(5px);
+    }
+    60% {
+        transform:translateX(-5px);
+    }
+    80% {
+        transform:translateX(2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+
+}
