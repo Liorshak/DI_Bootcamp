@@ -16,8 +16,11 @@ pets.push("horse");
 
 console.log(pets);
 
-console.log(pets.length);
+console.log(`The length is: ${pets.length}`);
 
 pets.splice(3,1);
 console.log(pets);
 
+
+pets.push(prompt("add a pet name"));
+console.log(pets);
