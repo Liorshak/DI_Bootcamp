@@ -23,7 +23,7 @@ nav strong {
 nav button {
   right: 15vh;
 
-  background-color: blue;
+  background-color: #4192fc;
   color: white;
 }
 
@@ -50,7 +50,7 @@ nav button {
 }
 
 .main_but {
-  background-color: blue;
+  background-color: #4192fc;
   color: white;
 }
 
@@ -85,6 +85,9 @@ span{
 }
 
 .logo {
-    color:blue;
+    color:#4192fc;
     font-size: 70px;
+}
+button{
+    border-radius: 5px;
 }
