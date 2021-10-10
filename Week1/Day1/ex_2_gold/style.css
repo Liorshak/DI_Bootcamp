@@ -1,0 +1,90 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: lightgray;
+  height: 8vh;
+  position: relative;
+}
+
+nav button,
+nav strong {
+  
+  position: absolute;
+  top: 2.5vh;
+}
+
+nav strong {
+  left: 15vh;
+}
+
+nav button {
+  right: 15vh;
+
+  background-color: blue;
+  color: white;
+}
+
+.image {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?cs=srgb&dl=pexels-pixabay-33545.jpg&fm=jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 51vh;
+}
+
+.image h1,
+.image form {
+  max-width: 60%;
+  margin: auto auto;
+  color: white;
+  text-align: center;
+  
+}
+
+.main_but {
+  background-color: blue;
+  color: white;
+}
+
+input {
+  border-radius: 5px;
+  width: 30vw;
+}
+
+h1 {
+  padding-top: 15vh;
+  font-size: 3.5vw;   
+  padding-bottom: 1vh;
+}
+
+.flex {
+    background-color:lightgrey;
+    display: flex;
+    justify-content:space-around;
+    padding: 5vh 10vw;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding:2vh 3vw;
+    max-width: 20%;
+    align-items: center;
+}
+
+span{
+    text-align: center;
+}
+
+.logo {
+    color:blue;
+    font-size: 70px;
+}
