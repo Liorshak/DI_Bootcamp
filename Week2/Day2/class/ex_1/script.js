@@ -25,3 +25,6 @@ console.log(userCart["prices"]["pear"]);
 chFruit=prompt("pick a fruit: Apple, Banana or Pear").toLowerCase();
 console.log(chFruit);
 console.log(`The price for ${chFruit} is ${userCart["prices"][chFruit]}`);
+
+userCart["prices"]["banana"]=Math.round((userCart["prices"]["pear"])*100)/100;
+console.log(userCart["prices"]["banana"]);
