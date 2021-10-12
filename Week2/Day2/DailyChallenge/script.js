@@ -17,10 +17,16 @@
 
 let sente = prompt('give me a sentence with "bad" and "not"').toLowerCase();
 let arrSente = sente.split(" ");
+
 let pBad = arrSente.indexOf("bad");
 let pNot = arrSente.indexOf("not");
+if (pBad<0 || pNot <0){
+    console.log("you didnt gave me the right sentence")
+}else{
+
 if (pBad > pNot) {
   arrSente.splice(pNot, pBad - pNot + 1, "good");
 }
 
 console.log(arrSente.join(" "));
+}
