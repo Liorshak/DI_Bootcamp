@@ -30,7 +30,7 @@ do {
   i++;
 } while (people[i] != "Jason"); // Using a loop, iterate through the people array and after you console.log “Jason” exit the loop.
 
-peopleCopy = people.slice(people.indexOf("Mary") + 1, people.indexOf("lior"));
+peopleCopy = people.slice(people.indexOf("Mary") + 1, people.indexOf("lior"));//Write code to make a copy of the people array using slice. The copy should NOT include “Mary” or your name.
 console.log(people.indexOf("Mary")); // Write code that console.logs Mary’s index. take a look at indexOf on google.
 
 // Write code that gives the indexOf “Foo” (this should return -1). Why does it return -1
