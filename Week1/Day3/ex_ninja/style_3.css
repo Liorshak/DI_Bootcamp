@@ -1,0 +1,30 @@
+.main {
+
+    display: grid;
+    grid-template-columns:repeat(16,1fr);
+    grid-template-rows: repeat(9,1fr);
+    margin: 0px auto;
+    height:80vh;
+    width:70vw;
+    border:2px solid black;
+    outline: 8px solid rgba(255, 0, 0, 0.253);
+    outline-offset: -8px;
+    filter: blur(1px);
+    
+}
+
+.red {
+    background-color:rgba(200, 0, 0, 0.5);
+   
+    /* filter: blur(0.2px); */
+}
+.white {
+    background-color:white;
+}
+
+.redder {
+    background-color:rgba(200, 0, 0, 0.75);
+    
+    /* filter: blur(0.2px); */
+    
+}

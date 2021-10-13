@@ -1,0 +1,31 @@
+.main {
+
+    display: grid;
+    grid-template-columns:repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
+    margin: 0px auto;
+    height:97vh;
+    width:50vw;
+    border: 2px solid black;
+    
+}
+
+div {
+   opacity: 0.8;
+}
+
+.black {
+    background-color:rgb(19, 19, 19);
+}
+
+.dGray {
+    background-color:rgb(77, 77, 77);
+}
+.mGray {
+    background-color:rgb(155, 155, 155);
+}
+.lGray {
+    background-color:lightgray;
+}
