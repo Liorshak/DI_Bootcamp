@@ -3,51 +3,51 @@
 // Given the years two people were born, find the date when the younger one is exactly half the age of the older.
 // Notes: The dates are given in the format YYYY
 // -------------------------------------------------------------
-// let year1 = parseInt(
-//   prompt("What is the year person 1 was born in YYYY template")
-// );
-// let year2 = parseInt(
-//   prompt("What is the year person 1 was born in YYYY template")
-// );
+let year1 = parseInt(
+  prompt("What is the year person 1 was born in YYYY template")
+);
+let year2 = parseInt(
+  prompt("What is the year person 1 was born in YYYY template")
+);
 
-// let age1 = 2021 - year1;
-// let age2 = 2021 - year2;
+let age1 = 2021 - year1;
+let age2 = 2021 - year2;
 
 // // ////// algorithm thinking  ageS - year= (ageB-year)/2
 // // ////  2ageS -2year= ageB -year
 // // /// 2ageS -year = ageB
 // // /// 2ageS -ageB=year
-// let before;
+let before;
 
-// if (age1 > age2) {
-//   before = 2 * age2 - age1;
-//   if (before < 0) {
-//     console.log(
-//       "there is not a such time some one was half the age of the other, someone is too old"
-//     );
-//   } else {
-//     console.log(
-//       `The year that person 2 was half the age of person 1 is: ${
-//         year2 + age2 - before
-//       }`
-//     );
-//   }
-// } else if (age2 > age1) {
-//   before = 2 * age1 - age2;
-//   if (before < 0) {
-//     console.log(
-//       "there is not a such time some one was half the age of the other, someone is too old"
-//     );
-//   } else {
-//     console.log(
-//       `The year that person 1 was half the age of person 2 is: ${
-//         year2 + age2 - before
-//       }`
-//     );
-//   }
-// } else {
-//   console.log("Are you playing with me you both the same age!");
-// }
+if (age1 > age2) {
+  before = 2 * age2 - age1;
+  if (before < 0) {
+    console.log(
+      "there is not a such time some one was half the age of the other, someone is too old"
+    );
+  } else {
+    console.log(
+      `The year that person 2 was half the age of person 1 is: ${
+        year2 + age2 - before
+      }`
+    );
+  }
+} else if (age2 > age1) {
+  before = 2 * age1 - age2;
+  if (before < 0) {
+    console.log(
+      "there is not a such time some one was half the age of the other, someone is too old"
+    );
+  } else {
+    console.log(
+      `The year that person 1 was half the age of person 2 is: ${
+        year2 + age2 - before
+      }`
+    );
+  }
+} else {
+  console.log("Are you playing with me you both the same age!");
+}
 // ----------------------------------------------------------------
 // Exercise 2 : Zip Codes
 // Instruction
@@ -66,30 +66,30 @@
 let zipCode = prompt("give me your zip code");
 
 // Option 1
-// if ((parseInt(zipCode).length = zipCode && zipCode.length == 5)) {
-//   console.log("success");
-// } else {
-//   console.log("error");
-// }
+if ((parseInt(zipCode).length = zipCode && zipCode.length == 5)) {
+  console.log("success");
+} else {
+  console.log("error");
+}
 //Option 2
 
-// flag = true;
-// if (zipCode.length != 5) {
-//   flag = false;
-// }
+flag = true;
+if (zipCode.length != 5) {
+  flag = false;
+}
 
-// let zipArr = zipCode.split("");
+let zipArr = zipCode.split("");
 
-// for (let i = 0; i < zipCode.length; i++) {
-//   if (isNaN(parseInt(zipArr[i]))) {
-//     flag = false;
-//   }
-// }
-// if (flag) {
-//   console.log("Success");
-// } else {
-//   console.log("Error");
-// }
+for (let i = 0; i < zipCode.length; i++) {
+  if (isNaN(parseInt(zipArr[i]))) {
+    flag = false;
+  }
+}
+if (flag) {
+  console.log("Success");
+} else {
+  console.log("Error");
+}
 
 ///option 3
 

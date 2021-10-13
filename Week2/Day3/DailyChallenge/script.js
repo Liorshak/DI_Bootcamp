@@ -12,12 +12,13 @@ for(let i=1; i<7;i++){
     console.log("*".repeat(i))
 }
 
-let=kohavit="";
+
 
 for (let i=1;i<7;i++){
+    let kohavit="";
     for (let b=0;b<i;b++){
         kohavit+="*";
     }
     console.log(kohavit);
-    kohavit="";
+    
 }

@@ -47,7 +47,7 @@ if (userCart["isUserSignedIn"]) {
 else {
   console.log("you need to sign in");
 }
-
+///////
 if (userCart["username"] === "John" && userCart["password"] == 1234) {
   alert("You are signed in");
 } else if (userCart["username"] === "John" || userCart["password"] == 1234) {
