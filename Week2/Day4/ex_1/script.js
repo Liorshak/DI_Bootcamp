@@ -340,13 +340,21 @@ const rentalCarCost = (days) => {
 };
 
 const totalVacationCost = () => {
-  let location = prompt("What is the destination you would like to travel??"); /// couldnt find the right sentence to make sure its buggy
-   
-  let nights =parseInt(prompt("How many nights you would like to stay in the hotel?"));
-    
+  let location=0;  
+   while (!/^[a-z]+$/i.test(location)){
+    location = prompt("What is the destination you would like to travel??");
+   }
+  let nights =prompt("How many nights you would like to stay in the hotel?");
+    while (!/^\d+$/.test(nights)) {
+    nights =prompt("How many nights you would like to stay in the hotel?");
+  nights=parseInt(nights);
+   }
 
-  let days = parseInt(prompt("How many days you would like to rent a car?"));
-  
+  let days = prompt("How many days you would like to rent a car?");
+  while (!/^\d+$/.test(days)) {
+    days =prompt("How many days you would like to rent a car?");
+  days=parseInt(days);
+   }
   
   console.log(
     `The car cost: ${rentalCarCost(days)}, the hotel cost: ${hotelCost(
