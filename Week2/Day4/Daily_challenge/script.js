@@ -17,9 +17,9 @@ let longWord=0;
 arrWords.forEach((value) => {
     longWord=Math.max(value.length,longWord); //check what is the longest word
  })
- let starWord="*".repeat(longWord+2)+"\n";
+ let starWord="*".repeat(longWord+4)+"\n";
  arrWords.forEach(value =>{
-     starWord+="*"+value+" ".repeat(longWord-value.length)+"*\n";
+     starWord+="* "+value+" ".repeat(longWord-value.length)+" *\n";
  })
- starWord+="*".repeat(longWord+2);
+ starWord+="*".repeat(longWord+4);
  console.log (starWord);
