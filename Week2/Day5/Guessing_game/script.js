@@ -2,7 +2,7 @@ const playTheGame = () => {
   if (confirm("do you want to play the game?")) {
     let computerNumber = Math.round(Math.random() * 10);
     let userNumber = validNumber();
-    alert(computerNumber);
+
     for (let i = 0; i <= 3; i++) {
       // test(userNumber,computerNumber);
       if (test(userNumber, computerNumber)) {
@@ -22,18 +22,10 @@ const playTheGame = () => {
 const test = (userNumber, computerNumber) => {
   if (computerNumber === userNumber) {
     return true;
-    // }else if(counter>3){
-    //     alert("out of chances")
-    //     return
   } else if (userNumber > computerNumber) {
     alert("“Your number is bigger then the computer’s, guess again");
-    // counter++
-    // test(userNumber,computerNumber)
   } else if (userNumber < computerNumber) {
     alert("Your number is smaller then the computer’s, guess again");
-    // counter++
-
-    // test(userNumber,computerNumber)
   }
 };
 
@@ -47,5 +39,3 @@ const validNumber = () => {
   }
   return parseInt(userNumber);
 };
-
-// If the user guessed more than 3 times, alert “out of chances” and exit the function.
