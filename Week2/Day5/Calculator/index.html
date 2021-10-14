@@ -5,39 +5,45 @@
     <title></title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      button {
-        width: 70px;
-        height: 70px;
-      }
+    
     </style>
   </head>
   <body>
+    <br />
+
     <section>
-      <h2>0</h2>
-      <br />
-      <button type="button" name="button" onclick="number(0);">0</button>
-      <button type="button" name="button" onclick="number(1);">1</button>
-      <button type="button" name="button" onclick="number(2);">2</button>
-      <button type="button" name="button" onclick="number(3);">3</button>
-      <br />
-      <button type="button" name="button" onclick="number(4);">4</button>
-      <button type="button" name="button" onclick="number(5);">5</button>
-      <button type="button" name="button" onclick="number(6);">6</button>
-      <button type="button" name="button" onclick="number(7);">7</button>
-      <br />
+      <h2 id="baseLine">0</h2>
+      <div>
+        <button type="button" name="button" class="num" onclick="number(0);">0</button>
+        <button type="button" name="button" class="num" onclick="number(1);">1</button>
+        <button type="button" name="button" class="num" onclick="number(2);">2</button>
+        <button type="button" name="button" class="num" onclick="number(3);">3</button>
+      </div>
+      <div>
+        <button type="button" name="button" class="num" onclick="number(4);">4</button>
+        <button type="button" name="button" class="num" onclick="number(5);">5</button>
+        <button type="button" name="button" class="num" onclick="number(6);">6</button>
+        <button type="button" name="button" class="num" onclick="number(7);">7</button>
+      </div>
 
-      <button type="button" name="button" onclick="number(8);">8</button>
-      <button type="button" name="button" onclick="number(9);">9</button>
-      <button type="button" name="button" onclick="number('.');">.</button>
-      <button type="button" name="button" onclick="operator('+');">+</button>
+      <div>
+        <button type="button" name="button" class="num" onclick="number(8);">8</button>
+        <button type="button" name="button" class="num" onclick="number(9);">9</button>
+        <button type="button" name="button" class="num" onclick="number('.');">.</button>
+        <button type="button" name="button" class="oper" onclick="operator('+');">+</button>
+      </div>
+      <div>
+        <button type="button" name="button" class="oper" onclick="operator('-');">-</button>
+        <button type="button" name="button" class="oper" onclick="operator('*');">*</button>
+        <button type="button" name="button" class="oper" onclick="operator('/');">/</button>
+        <button type="button" name="button" class="Equal" onclick="equal();">=</button>
+      </div>
+      <div class="func">
 
-      <br />
-
-      <button type="button" name="button" onclick="operator('-');">-</button>
-      <button type="button" name="button" onclick="operator('*');">*</button>
-      <button type="button" name="button" onclick="operator('/');">/</button>
-      <button type="button" name="button" onclick="equal();">=</button>
-      <br />
+        <button type="button" name="button" class="Reset" onclick="reset();">Reset</button>
+        <button type="button" name="button" class="clear" onclick="clean();">Clear</button>
+        <button type="button" name="button" class="ans" onclick="oldAns();">Ans</button>
+      </equal
     </section>
 
     <script src="script.js" charset="utf-8"></script>
