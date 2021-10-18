@@ -54,7 +54,6 @@ for (let item of solar) {
     newMoon.classList.add("moon");
     let newText2 = document.createTextNode(i + 1);
     newMoon.appendChild(newText2);
-
     newDiv.appendChild(newMoon);
   }
   main.appendChild(newDiv);

@@ -1,0 +1,18 @@
+button {
+  margin: 100px auto;
+  display: block;
+  width: 400px;
+  height: 200px;
+  font-size: 3rem;
+}
+div {
+  display: flex;
+}
+
+.red {
+  background-color: lightcoral;
+}
+
+.blue {
+  background-color: aqua;
+}
