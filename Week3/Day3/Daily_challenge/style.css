@@ -14,9 +14,14 @@ h3 {
   width: 70vh;
   margin: 30px auto;
   height: 20vh;
+  background: white;
 }
 
 h1 {
   margin: 0px auto 10px auto;
   color: darkslateblue;
+}
+
+body {
+  background-color: rgb(163, 248, 248);
 }

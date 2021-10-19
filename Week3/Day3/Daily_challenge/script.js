@@ -5,7 +5,7 @@ let displaying = (event) => {
   let lettersArr = event.target.value.split("");
   let showArr = [];
   lettersArr.forEach((v) => {
-    if (v.match(/^[A-Z]+$/i) || v == " ") {
+    if (v.match(/^[A-Z]+$/i)) {
       showArr.push(v);
     }
   });
