@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dropzone {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.draggedItem {
+  width: 90px;
+  height: 90px;
+  padding: 2px;
+  border: 2px solid green;
+  border-radius: 20%;
+  background-color: lightgreen;
+}
+
+.startDragging {
+  border: 2px solid blue;
+  border-radius: 40%;
+  background-color: lightblue;
+}
+
+.droppeditem {
+  border: 2px solid aqua;
+  border-radius: 40%;
+  background-color: palevioletred;
+}
+
+.greenBox {
+  background-color: lightgreen;
+}
+
+.containdrop {
+  border: 2px solid green;
+  background-color: indianred;
+  opacity: 0.5;
+}
