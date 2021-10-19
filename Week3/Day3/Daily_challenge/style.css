@@ -1,0 +1,22 @@
+div {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#inZone {
+  width: 70vh;
+  margin: auto;
+}
+
+h3 {
+  border: 1px solid black;
+  width: 70vh;
+  margin: 30px auto;
+  height: 20vh;
+}
+
+h1 {
+  margin: 0px auto 10px auto;
+  color: darkslateblue;
+}
