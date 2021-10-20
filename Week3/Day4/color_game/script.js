@@ -11,9 +11,8 @@ let setColor = (event) => {
   console.log("setting color");
 };
 
-let clickIn = (event) => {
+let clickIn = () => {
   flagMouse = true;
-  myColor = event.target.style.background;
 };
 let clickOut = () => {
   flagMouse = false;
@@ -61,6 +60,9 @@ colorArray.forEach((v) => {
 
 let paintC = (event) => {
   event.target.style.background = myColor;
+  console.log(myColor);
+  console.log(event.target.style.background);
+  console.log("change paint");
 };
 
 let paintO = (event) => {
