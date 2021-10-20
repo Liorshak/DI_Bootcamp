@@ -41,7 +41,7 @@ let colorArray = [
   "turquoise",
   "cyan",
   "lightskyblue",
-  "dogerblue",
+  "dodgerblue",
   "blue",
   "darkblue",
   "indigo",
