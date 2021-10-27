@@ -17,23 +17,25 @@ console.log(lettersObj);
 
 // Use the reduce() method to get this output { x: 1, y: 1, z: 2 };
 
-//option 2nd
+const letterObjRed = letters.reduce((total, val) => {
+  return total[val] ? ++total[val] : (total[val] = 1), total;
+}, {});
+
+const occurrences = letters.reduce((acc, curr) => {
+  return acc[curr] ? ++acc[curr] : (acc[curr] = 1), acc;
+}, {});
+
+console.log(letterObjRed);
+console.log(occurrences);
+
 console.log(
   letters.reduce((total, value) => {
-    if (!(value in total)) {
-      total[value] = 0;
-    }
+    if (!(value in total)) total[value] = 0;
     ++total[value];
     return total;
   }, {})
 );
 
-///option 3rd
-const occurrences = letters.reduce(function (acc, curr) {
-  return acc[curr] ? ++acc[curr] : (acc[curr] = 1), acc;
-}, {});
-
-console.log(occurrences);
 // Exercise 2 : Let’s Play!
 // Instructions
 // Using this array:
