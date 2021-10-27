@@ -2,37 +2,38 @@
 // Instructions
 // Using this array
 const letters = ["x", "y", "z", "z"];
-// let lettersObj = {};
-// for (let item of letters) {
-//   if (lettersObj[item] > 0) {
-//     lettersObj[item]++;
-//   } else {
-//     lettersObj[item] = 1;
-//   }
-// }
-// console.log(lettersObj);
+
+let lettersObj = {};
+for (let item of letters) {
+  if (lettersObj[item] > 0) {
+    lettersObj[item]++;
+  } else {
+    lettersObj[item] = 1;
+  }
+}
+console.log(lettersObj);
 
 // Use a for loop to get this output { x: 1, y: 1, z: 2 };
 
 // Use the reduce() method to get this output { x: 1, y: 1, z: 2 };
 
-let letterObjRed = letters.reduce((total, v) => {
-  console.log(total);
-  console.log(v);
-  console.log(total[v]);
-  if (total[v] === undefined) {
-    total[v] = 1;
-    console.log(total);
-    console.log(total[v]);
-  } else {
-    total[v] + 1;
-    console.log(total);
-    console.log(total[v]);
-  }
+//option 2nd
+console.log(
+  letters.reduce((total, value) => {
+    if (!(value in total)) {
+      total[value] = 0;
+    }
+    ++total[value];
+    return total;
+  }, {})
+);
+
+///option 3rd
+const occurrences = letters.reduce(function (acc, curr) {
+  return acc[curr] ? ++acc[curr] : (acc[curr] = 1), acc;
 }, {});
 
-console.log(letterObjRed);
-
+console.log(occurrences);
 // Exercise 2 : Let’s Play!
 // Instructions
 // Using this array:
