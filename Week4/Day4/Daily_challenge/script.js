@@ -36,6 +36,6 @@ let videoArr = [
   ["NI", "No idea", "unknown", 400],
 ];
 
-videoArr.forEach((el) => (el[0] = new Video(el[1], el[2], el[3])));
+videoArr.forEach((el) => let el[0] = new Video(el[1], el[2], el[3]));
 
 videoArr.forEach((el) => console.log(el[0]));
