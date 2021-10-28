@@ -64,11 +64,11 @@ class SmartTV extends TV {
   }
 }
 
-const Hisenses = new SmartTV("Hisenses");
-Hisenses.increase();
-Hisenses.setChannel(70);
-Hisenses.info();
-Hisenses.resetTV();
+const hisenses = new SmartTV("Hisenses");
+hisenses.increase();
+hisenses.setChannel(70);
+hisenses.info();
+hisenses.resetTV();
 
 // 1. Add methods to increase and decrease volume. Volume can't never be below 0 or above 100.
 // 2. Add a method to set the channel. Let's say the TV has only 50 channels so if you try to set channel 60 the TV will stay at the current channel.
