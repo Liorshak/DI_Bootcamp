@@ -1,0 +1,93 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.roboCard{
+    background-image: url("https://raw.githubusercontent.com/devtlv/studentsGitHub/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/card-pattern.png");
+    background-position: center;
+    background-size: cover;
+    background-color:rgba(135, 206, 250, 0.541);
+}
+
+body{
+    background-image: url("https://raw.githubusercontent.com/devtlv/studentsGitHub/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/circuit-pattern.png");
+    background-position: center;
+    background-color:rgba(154, 14, 197, 0.5);
+    height: 90vh;
+}
+
+
+h1{
+    font-family: 'SEGA LOGO FONT', sans-serif;
+    font-weight:lighter;
+    margin:auto 2vw;
+}
+
+#searchInput{
+    height: 5vh;
+    margin: auto 2vw;
+    background: lightgray;
+    border: none;
+    border-radius: 5px;
+    width:50vw;
+    font-size:1.2em;
+}
+
+
+#header{
+    background-color: rgba(144, 238, 144, 0.788);
+    display:flex;
+    height: 10vh;
+    padding: 5px 20px;
+    position:fixed;
+    width: 100%;
+    border-bottom: 5px solid lightslategrey;
+}
+
+#main{ 
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+padding:12vh 10vw;
+}
+
+#main div{
+    flex: 1 1 30%; 
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 100%;
+    max-width: 30%;
+    
+    /* width: 300px; */
+    background-color:rgb(23, 201, 201);
+    background-image: url("https://raw.githubusercontent.com/devtlv/studentsGitHub/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/card-pattern.png");
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.2em;
+    
+}
+
+#main div img{
+    height:auto;
+    width:auto;
+    border-radius: 50%;
+    background-color:rgb(13, 87, 87);
+    margin-bottom: 20px;
+        }
+
+#main h4{
+    margin-top: 0px;
+    margin-bottom:auto;
+    font-size:0.9em;
+  }
+
+.hidden{
+    display:none !important;
+}
