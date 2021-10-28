@@ -86,10 +86,14 @@ function displaying(event) {
   event.preventDefault();
   //   const main = document.getElementById("main");
   robots
-    .filter((v) => !v.name.includes(event.target.value))
+    .filter(
+      (v) => !v.name.toLowerCase().includes(event.target.value.toLowerCase())
+    )
     .forEach((v) => document.getElementById(v.id).classList.add("hidden"));
   robots
-    .filter((v) => v.name.includes(event.target.value))
+    .filter((v) =>
+      v.name.toLowerCase().includes(event.target.value.toLowerCase())
+    )
     .forEach((v) => document.getElementById(v.id).classList.remove("hidden"));
 }
 
