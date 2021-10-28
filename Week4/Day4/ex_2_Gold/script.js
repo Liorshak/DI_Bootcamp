@@ -17,10 +17,12 @@ printFullName({ first: "Elie", last: "Schoppik" });
 // keysAndValues({ key1: true, key2: false, key3: undefined })
 // ➞ [["key1", "key2", "key3"], [true, false, undefined]]
 
-keysAndValues = ({ ...obj }) => [
-  object.keys(obj).sort(),
-  object.values(obj).sort(),
-];
+keysAndValues = (obj) => {
+  ///not working
+  let keyArray = Object.keys(obj).sort();
+  let valueArray = Object.values(obj).sort();
+  return keyArray.concat(valueArray);
+};
 
 console.log(keysAndValues({ a: 1, b: 2, c: 3 }));
 console.log(keysAndValues({ a: "Apple", b: "Microsoft", c: "Google" }));
