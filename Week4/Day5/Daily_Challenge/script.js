@@ -8,9 +8,9 @@ if (
   let word1 = prompt("give me you first sentence").toLowerCase();
   let word2 = prompt("give me you second sentence").toLowerCase();
 
-  wordArr1 = word1.replaceAll(" ", "").split("");
-  wordArr2 = word2.replaceAll(" ", "").split("");
-  wordArr2Copy = [...wordArr2];
+  let wordArr1 = word1.replaceAll(" ", "").split("");
+  let wordArr2 = word2.replaceAll(" ", "").split("");
+  let wordArr2Copy = [...wordArr2];
 
   wordArr1.forEach((chr) => wordArr2.splice(wordArr2.indexOf(chr), 1));
   wordArr2Copy.forEach((chr) => wordArr1.splice(wordArr1.indexOf(chr), 1));
