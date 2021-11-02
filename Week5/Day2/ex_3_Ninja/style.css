@@ -1,0 +1,33 @@
+img{
+    display:block;
+    width: 15vw;
+        }
+
+#main{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    gap:10px;
+
+}
+
+div{
+    text-align:center;
+    /* flex: 1 1 15%; */
+}
+button{
+    display:block;
+    margin: 5px ;
+    font-size:1.3em;
+
+}
+#panel{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+input{
+    font-size:1.3em;
+    margin: 5px;
+}
