@@ -13,6 +13,7 @@ function deleteAll() {
 function searchGif(event) {
   event.preventDefault();
   search = document.getElementById("search");
+  deleteAll();
   let key = search.value;
   // array.filter((v) => !v.title.includes(key)).map((v) => v.id);
 
