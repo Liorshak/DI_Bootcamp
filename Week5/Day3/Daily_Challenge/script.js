@@ -1,10 +1,12 @@
 //part 1
 
 makeAllCaps = (array) => {
+  console.log(array);
   return array.map((v) => v.toUpperCase());
 };
 
 sortWords = (array) => {
+  console.log(array);
   return array.sort();
 };
 
@@ -12,7 +14,8 @@ sortWords = (array) => {
 Promise.resolve(["tomatoes", "avocados", "cucumbers"])
   .then(makeAllCaps)
   .then(sortWords)
-  .then((result) => console.log(result));
+  .then((result) => console.log(result))
+  .catch((err) => console.log(err));
 
 // Part 2
 
@@ -69,7 +72,7 @@ let toJs = (json) => {
     if (Object.entries(JSON.parse(json)).length > 0) {
       resolve(JSON.parse(json));
     } else {
-      reject(console.log("This is empty, what is this!"));
+      reject("This is empty, what is this!");
     }
   });
 };
@@ -86,11 +89,12 @@ let toMorse = (morseJS) => {
     "give me a word or a sentence and i will translate to morse"
   )
     .toLowerCase()
+    .replaceAll(" ", "")
     .split("");
-  console.log(wordArr);
+  // console.log(wordArr);
   return new Promise((resolve, reject) => {
     if (wordArr.every((v) => v in morseJS)) {
-      console.log(wordArr.map((v) => morseJS[v]));
+      // console.log(wordArr.map((v) => morseJS[v]));
       resolve(wordArr.map((v) => morseJS[v]));
     } else {
       //   console.log(wordArr.every((v) => v in morseJS));
@@ -102,8 +106,9 @@ let toMorse = (morseJS) => {
 let joinWords = (arr) => arr.join("\n");
 
 toJs(morse)
-  .then((res) => toMorse(res))
-
-  .then((res) => joinWords(res))
+  .then(toMorse)
+  // .then((res) => toMorse(res))
+  .then(joinWords)
+  // .then((res) => joinWords(res))
   .then((res) => console.log(res))
   .catch((err) => console.log(err));
