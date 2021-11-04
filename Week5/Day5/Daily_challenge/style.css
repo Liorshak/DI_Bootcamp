@@ -1,0 +1,48 @@
+body{
+    margin:0px;
+    background-image: url("https://images.unsplash.com/photo-1459257831348-f0cdd359235f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80");
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#main{
+
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    height:80vh;
+    width:70vw;
+    margin: 10vh auto;
+    color:white;
+    font-size:1.7em;
+    border:1px solid black;
+    background:rgba(61, 90, 118, 0.6);
+    border-radius: 10px;
+
+}
+
+input, select{
+    font-size:1.2em;
+}
+
+#result{
+    border:1px solid black;
+    border-radius:5px;
+    width:24vw;
+    text-align:center;
+    background:rgb(61, 90, 118)
+}
+
+h1{
+    font-size: 2em;
+}
+
+#convert{
+    border:1px solid black;
+    background:rgb(61, 90, 118);
+    color:white;
+    stroke:white;
+}
