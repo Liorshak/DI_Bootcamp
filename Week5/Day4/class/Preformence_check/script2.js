@@ -3,6 +3,7 @@ btn.addEventListener("click", requestData);
 
 async function requestData() {
   const t0 = performance.now();
+  console.log(t0);
 
   const urls = [
     "https://jsonplaceholder.typicode.com/users/1",
@@ -21,5 +22,6 @@ async function requestData() {
   p.textContent = `1st USER : ${firstUser.name} - 2nd USER : ${secondUser.name}`;
   resultsDiv.appendChild(p);
   const t1 = performance.now();
+  console.log(t1);
   console.log(`Promise.all version took ${t1 - t0} milliseconds.`);
 }

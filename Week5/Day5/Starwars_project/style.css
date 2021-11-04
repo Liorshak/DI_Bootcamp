@@ -1,0 +1,150 @@
+body{
+    margin:0px;
+    box-sizing: border-box;
+    font-size:2.5em;
+}
+
+
+#main{
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-image: url("https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+#logo{
+    background-image: url("http://imagizer.imageshack.com/a/img922/3783/oyvsRd.png");
+    background-size: cover;
+    height:200px;
+    width:400px;
+    margin-bottom: 30px;
+}
+
+
+#content {
+    width:50vw;
+    height:50vh;
+    border:2px solid yellow;
+    border-radius:10px;
+    margin:20px 0px;
+
+
+}
+button {
+font-size: 0.7em;
+border:2px solid yellow;
+border-radius:5px;
+}
+
+#loading {
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    padding:30px;
+}
+
+
+#loading-text {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:30px;
+    }
+
+#circle{
+    position: relative;
+    top:20px;
+   
+}
+
+#person{
+    color:white;
+    text-align:center;
+    font-size: 0.8em;
+}
+
+.dot-pulse {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    box-shadow: 9999px 0 0 -5px white;
+    animation: dotPulse 1.5s infinite linear;
+    animation-delay: .25s;
+  }
+  
+  .dot-pulse::before, .dot-pulse::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+  }
+  
+  .dot-pulse::before {
+    box-shadow: 9984px 0 0 -5px white;
+    animation: dotPulseBefore 1.5s infinite linear;
+    animation-delay: 0s;
+  }
+  
+  .dot-pulse::after {
+    box-shadow: 10014px 0 0 -5px white;
+    animation: dotPulseAfter 1.5s infinite linear;
+    animation-delay: .5s;
+  }
+  
+  @keyframes dotPulseBefore {
+    0% {
+      box-shadow: 9984px 0 0 -5px white;
+    }
+    30% {
+      box-shadow: 9984px 0 0 2px white;
+    }
+    60%,
+    100% {
+      box-shadow: 9984px 0 0 -5px white;
+    }
+  }
+  
+  @keyframes dotPulse {
+    0% {
+      box-shadow: 9999px 0 0 -5px white;
+    }
+    30% {
+      box-shadow: 9999px 0 0 2px white;
+    }
+    60%,
+    100% {
+      box-shadow: 9999px 0 0 -5px white;
+    }
+  }
+  
+  @keyframes dotPulseAfter {
+    0% {
+      box-shadow: 10014px 0 0 -5px white;
+    }
+    30% {
+      box-shadow: 10014px 0 0 2px white;
+    }
+    60%,
+    100% {
+      box-shadow: 10014px 0 0 -5px white;
+    }
+  }
+  
+
+  .hidden{
+      display: none !important;
+  }
