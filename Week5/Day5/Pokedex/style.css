@@ -1,0 +1,205 @@
+body{
+    margin:0px;
+    box-sizing: border-box;
+    font-size:1.3em;
+}
+
+#main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+
+/* #photo{
+    margin-top:50px;
+} */
+
+
+#logo{
+    /* flex: 1 1 10%; */
+    background-image: url("https://github.com/devtlv/studentsGitHub/blob/master/JS/Week%205/Day%205/Mini%20Projects/Mini-Project%202%20-%20Pokedex%20API/logo.png?raw=true");
+    /* background-size: cover; */
+    background-repeat:no-repeat;
+    background-position: center;
+    height:28vh;
+    min-width:300px;
+
+
+}
+
+#info{
+    height:220px;
+    width:300px;
+    margin-bottom: 230px;
+   
+    margin-right: 107px;
+    padding-left:40px;
+
+}
+
+#playArea{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+width: 750px;
+}
+
+#left, #right{
+    width: 50px;
+    height: 27px;
+    background:transparent;
+    /* border-top: 1px solid black; */
+    margin-top:87px;
+    margin-left:2px;
+
+}
+#arrowKeys{
+    margin-left: 80px;
+}
+
+
+#loadData{
+    height: 75px;
+    width: 75px;
+    /* border:1px solid black; */
+    border-radius: 50%;
+    background: transparent;
+    margin-top:65px;
+    margin-right:2px;
+}
+
+#content{
+    /* flex:2 0.5 40%; */
+    background-image: url("https://github.com/devtlv/studentsGitHub/blob/master/JS/Week%205/Day%205/Mini%20Projects/Mini-Project%202%20-%20Pokedex%20API/pokedex.png?raw=true");
+    /* background-size: cover; */
+    background-repeat:no-repeat;
+    min-width: 880px;
+    min-height: 590px;
+    width:700px;
+    height:830px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#instructions{
+    /* flex: 1 1 10%; */
+    min-width: 250px;
+
+
+}
+
+#loading {
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+    padding:30px;
+}
+
+
+#loading-text {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:30px;
+    font-size: 1.8em;
+    }
+
+#loading-text > h5 {
+    position: relative;
+    top:40px;
+}
+
+#circle{
+    position: relative;
+    top:50px;
+    font-size: 2em;
+   
+}
+
+
+.dot-pulse {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    box-shadow: 9999px 0 0 -5px white;
+    animation: dotPulse 1.5s infinite linear;
+    animation-delay: .25s;
+    
+  }
+  
+  .dot-pulse::before, .dot-pulse::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+  }
+  
+  .dot-pulse::before {
+    box-shadow: 9984px 0 0 -5px white;
+    animation: dotPulseBefore 1.5s infinite linear;
+    animation-delay: 0s;
+  }
+  
+  .dot-pulse::after {
+    box-shadow: 10014px 0 0 -5px white;
+    animation: dotPulseAfter 1.5s infinite linear;
+    animation-delay: .5s;
+  }
+  
+  @keyframes dotPulseBefore {
+    0% {
+      box-shadow: 9984px 0 0 -5px white;
+    }
+    30% {
+      box-shadow: 9984px 0 0 2px white;
+    }
+    60%,
+    100% {
+      box-shadow: 9984px 0 0 -5px white;
+    }
+  }
+  
+  @keyframes dotPulse {
+    0% {
+      box-shadow: 9999px 0 0 -5px white;
+    }
+    30% {
+      box-shadow: 9999px 0 0 2px white;
+    }
+    60%,
+    100% {
+      box-shadow: 9999px 0 0 -5px white;
+    }
+  }
+  
+  @keyframes dotPulseAfter {
+    0% {
+      box-shadow: 10014px 0 0 -5px white;
+    }
+    30% {
+      box-shadow: 10014px 0 0 2px white;
+    }
+    60%,
+    100% {
+      box-shadow: 10014px 0 0 -5px white;
+    }
+  }
+  
+
+  .hidden{
+      display: none !important;
+  }
