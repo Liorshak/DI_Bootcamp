@@ -40,9 +40,11 @@
 --    SELECT * FROM customers;
 -- 
 
--- 2.SELECT * FROM items WHERE price > 80;
-
-
+-- 2. SELECT * FROM items WHERE price > 80;
+-- 3. SELECT * FROM items WHERE price<300;
+-- 4. SELECT * FROM customers WHERE last_name='Smith'    // EMPTY
+-- 5. SELECT * FROM customers WHERE last_name='Jones'
+-- 6. SELECT * FROM customers WHERE first_name!='Scott'
 
 		
 		
