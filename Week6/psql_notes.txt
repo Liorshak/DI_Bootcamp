@@ -1,0 +1,59 @@
+to_char 
+
+extract
+
+Distinct
+
+current_timestmap
+now()
+
+
+Switch to postgres User : sudo -i -u postgres
+
+Create Database: CREATE DATABASE hollywood;
+
+Show Existing Databases: \l
+
+Show Tables: \d
+
+Show Tables in current database : \dt
+
+Switch to another database: \c <database_name>
+
+\c Hollywood 
+# To switch to the Hollywood database
+
+\dt
+# To see the current tables
+
+
+Describe a particular table : \d <table_name>
+
+\d actors
+# To get the fields of the actors table
+
+
+actors table
+
+
+Check the version of PostgreSQL : SELECT version();
+
+See the previously executed command: \g
+
+Enlisting all the available commands : \?
+
+Knowing the syntaxes of PostgreSQL statements: \h <statement>
+
+\h SELECT
+# To get the syntax of a SELECT statement
+# Response 
+Command:     SELECT
+Description: retrieve rows from a table or view
+Syntax: ...
+
+
+Edit command in your own editor: \e opens you editor. You can then modify the command, save the file, and close it. psql will execute the commands written in the file.
+
+13 . Quit psql : \q
+
+https://www.postgresqltutorial.com/psql-commands/
