@@ -57,3 +57,8 @@ Edit command in your own editor: \e opens you editor. You can then modify the co
 13 . Quit psql : \q
 
 https://www.postgresqltutorial.com/psql-commands/
+
+
+
+
+on delete cascade on update cascade
