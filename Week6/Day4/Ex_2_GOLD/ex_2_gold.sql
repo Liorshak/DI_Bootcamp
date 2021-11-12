@@ -162,5 +162,5 @@
 -- select * from new_jobs
 
 
-insert into new_employees (first_name , last_name, email, phone_number,job_id,salary) 
-values ('jhon','mambo','mambojhon@gmail.com',555555,(select job_id from new_jobs where job_title ilike 'k%'),(select min_salary from new_jobs where job_title ilike 'k%'));
+-- insert into new_employees (first_name , last_name, email, phone_number,job_id,salary) 
+-- values ('jhon','mambo','mambojhon@gmail.com',555555,(select job_id from new_jobs where job_title ilike 'k%'),(select min_salary from new_jobs where job_title ilike 'k%'));
