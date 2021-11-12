@@ -9,12 +9,14 @@ body{
 }
 #navbar{
 width:100vw;
-
-
-
-
 }
 
+.finished{
+    color:rgb(134, 161, 54) !important;
+    text-decoration:line-through;
+    
+    }
+    
 
 h1{
     font-size:2.5em;
@@ -35,8 +37,8 @@ color:white;
 }
 
 input,label,textarea{
-    
-font-size: 1.5em;}
+    overflow:auto;
+font-size: 1.2vh;}
 
 #todo_form{
     display:flex;

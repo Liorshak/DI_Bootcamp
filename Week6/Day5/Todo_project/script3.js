@@ -8,18 +8,34 @@
   taskList = taskList.sort(compare);
   let mainWeek = document.getElementById("mainWeek");
   for (let task of taskList) {
-    let newDiv = document.createElement("div");
-    let newName = document.createElement("h3");
-    newName.appendChild(document.createTextNode(task.name));
-    newDiv.appendChild(newName);
+    if (checkNotDue(task.endDate)) {
+      let newDiv = document.createElement("div");
+      let newName = document.createElement("h3");
+      newName.appendChild(document.createTextNode(task.name));
+      newDiv.appendChild(newName);
 
-    console.log(`"${startingPoint(task.startDate)}%"`);
-    mainWeek.appendChild(newDiv);
-    newDiv.style.marginLeft = `${startingPoint(task.startDate)}%`;
-    newDiv.style.width = `${width(task.startDate, task.endDate)}%`;
-    let randomColor = Math.floor(Math.random() * 16777215).toString(16);
-    newDiv.style.backgroundColor = `#${randomColor}`;
-    // newDiv.style.marginLeft = `"${startingPoint(task.startDate)}%"`;
+      console.log(`"${startingPoint(task.startDate)}%"`);
+      mainWeek.appendChild(newDiv);
+      newDiv.style.marginLeft = `${startingPoint(task.startDate)}%`;
+      newDiv.style.width = `${width(task.startDate, task.endDate)}%`;
+      let randomNum = Math.round(Math.random() * 6);
+      let colorarr = [
+        "A95385",
+        "CF666E",
+        "A95385",
+        "6F8FA2",
+        "D4A469",
+        "8B79AE",
+        "427983",
+      ];
+      newDiv.style.backgroundColor = `#${colorarr[randomNum]}`;
+      if (task.finish) {
+        newDiv.classList.add("finished");
+      } else {
+        newDiv.classList.remove("finished");
+      }
+      // newDiv.style.marginLeft = `"${startingPoint(task.startDate)}%"`;
+    }
   }
 })();
 
@@ -68,4 +84,14 @@ function width(str1, str2) {
   let hoursleft = timeLeft / (1000 * 60 * 60);
   let precentageLength = (hoursleft / (24 * 7)) * 100;
   return Math.min(precentageLength, 100 - startingPoint(str1));
+}
+
+function checkNotDue(str) {
+  let now = new Date();
+  let endDate = new Date(str);
+  if (now < endDate) {
+    return true;
+  } else {
+    return false;
+  }
 }

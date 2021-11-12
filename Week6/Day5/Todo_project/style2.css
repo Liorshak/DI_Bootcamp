@@ -60,11 +60,6 @@ section>button{
     height:20px;
 }
 
-.finished{
-color:rgb(134, 161, 54) !important;
-text-decoration:line-through;
-
-}
 
 .noTime{
     color:rgb(127, 42, 104);
