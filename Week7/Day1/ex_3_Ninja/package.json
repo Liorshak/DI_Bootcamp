@@ -1,0 +1,19 @@
+{
+  "name": "ex_3_ninja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "nodemon": "^2.0.15",
+    "prompts": "^2.4.2",
+    "to-regex": "^3.0.2"
+  }
+}
