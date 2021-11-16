@@ -48,7 +48,7 @@ function sendData(e) {
         .then((data) => {
           console.log(data);
           addElem([{ country, countryId }]);
-          addInfo(`${country} ${countryId} was updated successfully`);
+          addInfo(` was updated successfully`);
         })
         .catch((e) => {
           console.log(e);

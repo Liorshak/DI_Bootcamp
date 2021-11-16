@@ -44,12 +44,16 @@ app.put("/api/countries/:countryName", (req, res) => {
     .returning("*")
     .then((data) => {
       console.log(data);
-      fs.appendFile("log.txt", `${data} was add to database \n`, (err) => {
-        if (err) {
-          console.log(err);
-          return;
+      fs.appendFile(
+        "log.txt",
+        `${JSON.stringify(data)} was add to database \n`,
+        (err) => {
+          if (err) {
+            console.log(err);
+            return;
+          }
         }
-      });
+      );
       res.json(data);
     })
     .catch((e) => {
@@ -61,13 +65,9 @@ app.post("/api/countries", (req, res) => {
   console.log(parseInt(req.body.countryId));
   fs.appendFile(
     "log.txt",
-    db
-      .select("country")
-      .from("country")
-      .where({ country_id: parseInt(req.body.countryId) }) +
-      ` with Id of ${parseInt(req.body.countryId)}  was update to ${
-        req.body.country
-      } \n`,
+    `Country with Id of ${parseInt(req.body.countryId)} was updated to ${
+      req.body.country
+    } \n`,
     (err) => {
       if (err) {
         console.log(err);
@@ -89,13 +89,10 @@ app.post("/api/countries", (req, res) => {
 
 app.delete("/api/countries/:countryId", (req, res) => {
   parseInt(req.body.countryId);
+
   fs.appendFile(
     "log.txt",
-    db
-      .select("country")
-      .from("country")
-      .where({ country_id: req.params.countryId }) +
-      ` with Id of ${req.params.countryId}  was Deleted \n`,
+    `Country with Id of ${req.params.countryId} was Deleted \n`,
     (err) => {
       if (err) {
         console.log(err);
