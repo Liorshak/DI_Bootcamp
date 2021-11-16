@@ -1,0 +1,111 @@
+full query 
+full query 
+full query 
+full query 
+full query 
+full query 
+full query 
+full query 
+full query 
+full query 
+[object Object] was add to database 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = ':111' with Id of :111  was Deleted 
+select "country" from "country" where "country_id" = ':111' with Id of :111  was Deleted 
+select "country" from "country" where "country_id" = ':111' with Id of :111  was Deleted 
+select "country" from "country" where "country_id" = ':111' with Id of :111  was Deleted 
+select "country" from "country" where "country_id" = ':111' with Id of :111  was Deleted 
+select "country" from "country" where "country_id" = ':111' with Id of :111  was Deleted 
+select "country" from "country" where "country_id" = NaN with Id of NaN  was Deleted 
+select "country" from "country" where "country_id" = NaN with Id of NaN  was Deleted 
+select "country" from "country" where "country_id" = NaN with Id of NaN  was Deleted 
+select "country" from "country" where "country_id" = NaN with Id of NaN  was Deleted 
+select "country" from "country" where "country_id" = NaN with Id of NaN  was Deleted 
+select "country" from "country" where "country_id" = NaN with Id of NaN  was Deleted 
+full query 
+select "country" from "country" where "country_id" = NaN with Id of NaN  was Deleted 
+select "country" from "country" where "country_id" = 111 with Id of 111  was update to undefined 
+select "country" from "country" where "country_id" = 111 with Id of 111  was update to undefined 
+select "country" from "country" where "country_id" = 111 with Id of 111  was update to undefined 
+full query 
+select "country" from "country" where "country_id" = 111 with Id of 111  was update to undefined 
+select "country" from "country" where "country_id" = 111 with Id of 111  was update to jorjias 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = NaN with Id of NaN  was Deleted 
+select "country" from "country" where "country_id" = ':112' with Id of :112  was Deleted 
+select "country" from "country" where "country_id" = '112' with Id of 112  was Deleted 
+select "country" from "country" where "country_id" = '111' with Id of 111  was Deleted 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = '113' with Id of 113  was Deleted 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = '113' with Id of 113  was Deleted 
+select "country" from "country" where "country_id" = '114' with Id of 114  was Deleted 
+full query 
+full query 
+select "country" from "country" where "country_id" = 111 with Id of 111  was update to Israel 
+select "country" from "country" where "country_id" = 112 with Id of 112  was update to Israel 
+select "country" from "country" where "country_id" = 113 with Id of 113  was update to Israel 
+select "country" from "country" where "country_id" = 114 with Id of 114  was update to Israel 
+[object Object] was add to database 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = 115 with Id of 115  was update to Israelalio 
+select "country" from "country" where "country_id" = '115' with Id of 115  was Deleted 
+full query 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = 117 with Id of 117  was update to jorjialika 
+select "country" from "country" where "country_id" = '117' with Id of 117  was Deleted 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosd 
+select "country" from "country" where "country_id" = '118' with Id of 118  was Deleted 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 118 with Id of 118  was update to Israelaliosdsad 
+select "country" from "country" where "country_id" = 12313 with Id of 12313  was update to sdsd 
+[object Object] was add to database 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = 120 with Id of 120  was update to jorjiasdsds 
+select "country" from "country" where "country_id" = 120 with Id of 120  was update to jorjiasdsds 
+select "country" from "country" where "country_id" = 120 with Id of 120  was update to jorjiasdsds 
+select "country" from "country" where "country_id" = 120 with Id of 120  was update to jorjiasdsds 
+select "country" from "country" where "country_id" = 120 with Id of 120  was update to jorjiasdsds 
+select "country" from "country" where "country_id" = 120 with Id of 120  was update to jorjiasdsds 
+select "country" from "country" where "country_id" = 120 with Id of 120  was update to jorjiasdsds 
+select "country" from "country" where "country_id" = '120' with Id of 120  was Deleted 
+select "country" from "country" where "country_id" = 121 with Id of 121  was update to jorjiasdsds 
+select "country" from "country" where "country_id" = 121 with Id of 121  was update to Israelalio 
+full query 
+select "country" from "country" where "country_id" = 121 with Id of 121  was update to jorjialika 
+select "country" from "country" where "country_id" = 121 with Id of 121  was update to jorjia 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = '121' with Id of 121  was Deleted 
+select "country" from "country" where "country_id" = '1212' with Id of 1212  was Deleted 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = '123' with Id of 123  was Deleted 
+[object Object] was add to database 
+select "country" from "country" where "country_id" = '124' with Id of 124  was Deleted 
