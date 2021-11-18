@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+<body>
+   
+    
+    <H1>Register</H1>
+    <form method="post" >
+       First Name:<input type="text" name="name" placeholder="write your first name" id="name" onchange="success()"><br>
+        Last Name:<input type="text" name="lName" placeholder="write your last name" id="lName" onchange="success()"><br>
+        Email:<input type="email" name="email" placeholder="your email" id="email" onchange="success()"><br>
+       Username: <input type="username" name="username" placeholder="create a username" id="username" onchange="success()"><br>
+        Password: <input type="text" name="password" placeholder="create a new password" id="password" onchange="success()"><br>
+        <input type=submit id="submit" value="Register" disabled onclick="register(event)"><br>
+
+    </form>
+
+    <div id='root'></div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
