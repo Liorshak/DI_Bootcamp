@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Shoping list</h1>
+<form method="get" action='/shopping'>
+    <input type="text" name="item" id ="item" placeholder="what item you need?">
+    <input type= "number" name="amount" id="amount" placeholder="amount needed">
+    <input type="submit" value="Submit" onclick="addItem(event)">
+</form>
+
+<div ><p id="root"></p></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
