@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/header'); %>
+    </header>
+
+   
+  
+    <section id ="searchCont">
+  
+        <div id="searchBar">
+            <form method="POST" id="SBT">
+                <input type="text" id="searchTitle" placeholder="Search by title">
+                <input type="submit" value="search" onclick="SBT(event)">
+
+            </form>
+
+            <form>
+                <input type="text" id="searchCat" placeholder="Search by category">
+                <input type="submit" value="search" onclick="SBC(event)">
+            </form>
+        </div>
+
+<div id="posts">
+    <h1>Posts</h1>
+
+ 
+  </div>
+
+  
+  
+</section> 
+    <footer>
+      <%- include('../partials/footer') %>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

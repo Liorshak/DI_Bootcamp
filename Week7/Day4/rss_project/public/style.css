@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+header{
+    display:flex;
+    margin:0;
+  
+}
+
+.nav-link{
+    text-decoration: none;
+    color:darkmagenta;
+}
+.nav-link:hover{
+    color:goldenrod;
+    
+}
+
+.post_content img{
+    /* display:none !important; */
+
+width:20vw;
+height:20vh;
+margin:auto;
+  
+
+}
+
+#mainPage {
+   
+    background: lightgray;
+    
+}
+
+#searchCont{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+#posts{
+    background: lightgray;
+width: 66vw;
+
+
+}
+
+#searchBar{
+    width:30vw;
+    background: lightgray;
+    height:20vh;
+}
+
+input{
+    font-size: 1.3em;
+    margin:20px 0px 20px 20px;
+
+}
+
+.hidden {
+    display:none !important;
+}
+h1{
+    text-align: center;
+}

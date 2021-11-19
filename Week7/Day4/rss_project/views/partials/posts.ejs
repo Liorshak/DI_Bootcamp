@@ -1,0 +1,15 @@
+
+
+
+<div>
+
+<% JSON.parse(data).items.forEach(item=>{ %>
+    <div class="post_content">
+        <a><h2><%= item.title %></h2></a>
+        <p><%= item.isoDate %> | <%= item.creator %>| Catagories: <% item.categories.forEach(v=>{ %> <strong> <%= v+", " %></strong>  <% }) %> </p>  
+        <div><%- item.content %></div>
+         </div>
+
+<% }) %>
+
+</div>

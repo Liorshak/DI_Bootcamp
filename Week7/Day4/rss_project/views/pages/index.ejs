@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/header'); %>
+    </header>
+
+    <section id="mainPage">
+    <h1>Posts</h1>
+
+  
+<div>
+
+  <% JSON.parse(data).items.forEach(item=>{ %>
+      <div class="post_content">
+          <a href=" <%= item.link %>  "><h2><%= item.title %></h2></a>
+          <p><%= item.isoDate %> | <%= item.creator %>| Catagories: <% item.categories.forEach(v=>{ %> <strong> <%= v+", " %></strong>  <% }) %> </p>  
+          <div><%- item.content %></div>
+          
+           </div>
+           <hr>
+  
+  <% }) %>
+  
+  </div>
+  
+</section> 
+    <footer>
+      <%- include('../partials/footer') %>
+    </footer>
+  </body>
+</html>
