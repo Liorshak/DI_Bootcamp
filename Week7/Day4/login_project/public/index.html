@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login Register page</h1>
+<section id="main">
+    <div>
+        <form id="login" method="post">
+            <h2>Login</h2>
+  
+                Username:<br> <input type="username" name="username" placeholder="username" id="usernameL" onchange="successLogin()"><br>
+               Password:<br> <input type="text" name="password" placeholder="password" id="passwordL" onchange="successLogin()"><br>
+                <input type=submit id="submitLogin" value="Login" disabled onclick="login(event)"><br>
+               <div id="login_info"></div>
+            </form>
+    </div>
+    <div>
+        <form id="register" method="post" >
+            <h2>Register</h2>
+            First Name:<br><input type="text" name="name" placeholder="write your first name" id="name" onchange="successRegi()"><br>
+             Last Name:<br><input type="text" name="lName" placeholder="write your last name" id="lName" onchange="successRegi()"><br>
+             Email:<br><input type="email" name="email" placeholder="your email" id="email" onchange="successRegi()"><br>
+            Username: <br><input type="username" name="username" placeholder="create a username" id="username" onchange="successRegi()"><br>
+             Password: <br><input type="text" name="password" placeholder="create a new password" id="password" onchange="successRegi()"><br>
+             <input type=submit id="submitRegi" value="Register" disabled onclick="register(event)"><br>
+            <div id="register_info"></div>
+         </form>
+     
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+body{
+    margin:0;
+    box-sizing:border-box;
+  
+}
+
+h1{
+    text-align:center;
+    border-bottom: 2px solid black;
+    margin-left: auto;
+}
+
+#main{
+    display:flex;
+    justify-content: center;
+    gap:5vw;
+}
+
+#login, #register{
+width:40vw;
+
+}
+
+input{
+    width:70%;
+    margin:10px auto;
+}
