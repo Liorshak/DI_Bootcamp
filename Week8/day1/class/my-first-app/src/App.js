@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import SearchBar from "./components/SearchBar";
 // import Card from "./components/Card";
 
 import CardList from "./components/CardList";
@@ -10,18 +11,27 @@ class App extends React.Component {
     super();
     this.state = {
       arr: [],
+      searchTxt: "",
     };
     console.log("constructor");
   }
 
+  filterRobot = (e) => {
+    return this.setState({ searchTxt: e.target.value });
+  };
+
   render() {
     console.log("render");
-    const { arr } = this.state;
+    const { arr, searchTxt } = this.state;
+    const filterArr = arr.filter((item) =>
+      item.name.toLowerCase().includes(searchTxt.toLowerCase())
+    );
     console.log("arr", arr);
     return (
       <div>
         <h1 className="tc">Robots</h1>
-        <CardList arr_robots={arr} />
+        <SearchBar onSearch={this.filterRobot} />
+        <CardList arr_robots={filterArr} />
       </div>
     );
   }
