@@ -1,6 +1,8 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const Idea = (props) => {
   console.log(props);
@@ -9,7 +11,7 @@ const Idea = (props) => {
     <div>
       <Row>
         <Col md={2} s={12}>
-          <i className={icon}></i>
+          {icon}
         </Col>
         <Col md={10} s={12}>
           <h2>

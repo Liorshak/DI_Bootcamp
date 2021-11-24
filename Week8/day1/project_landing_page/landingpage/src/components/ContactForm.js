@@ -2,6 +2,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { far } from "@fortawesome/free-regular-svg-icons";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -22,9 +23,13 @@ const ContactForm = () => {
             <div className="mt-4 text-start">
               <p className="text-left" style={{ fontSize: "13px" }}>
                 Contact us and we will get back to you in 24 hours. <br />
-                <i className="fas fa-map-marker-alt"></i> Company Name <br />
-                <i className="fas fa-mobile-alt"></i> +972-54-5584414 <br />
-                <i className="far fa-envelope"></i> liorshak1986@gmail.com
+                <FontAwesomeIcon icon={["fas", "map-marker-alt"]} /> Company
+                Name <br />
+                <FontAwesomeIcon
+                  icon={["fas", "mobile-alt"]}
+                /> +972-54-5584414 <br />
+                <FontAwesomeIcon icon={["fas", "envelope-open-text"]} />{" "}
+                liorshak1986@gmail.com
               </p>
             </div>
           </Col>
