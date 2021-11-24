@@ -5,11 +5,11 @@ import React from "react";
 class App extends React.Component {
   constructor() {
     super();
-    this.shootRegular = this.shootRegular.bind(this);
 
     this.state = {
       favoriteColor: "red",
     };
+    this.shootRegular = this.shootRegular.bind(this);
   }
 
   componentDidMount() {
@@ -31,7 +31,7 @@ class App extends React.Component {
   }
 
   shootRegularWithParameter(par) {
-    console.log(par.argument); // to check with amichai
+    console.log(par);
     alert(par);
   }
 
@@ -53,10 +53,10 @@ class App extends React.Component {
         <button onClick={this.shoot}>Take the shot!</button>
         <br />
         <br />
-        <button onClick={this.shootRegular}>Keep Shooting!</button>
+        <button onClick={() => this.shootRegular()}>Keep Shooting!</button>
         <br />
         <br />
-        <button onClick={this.shootRegularWithParameter.bind("goal")}>
+        <button onClick={this.shootRegularWithParameter.bind(this, "goal")}>
           Shooting!
         </button>
         <br />
