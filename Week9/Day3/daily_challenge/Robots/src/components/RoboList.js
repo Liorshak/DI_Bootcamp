@@ -17,8 +17,10 @@ const RoboList = ({ filterArr, robotArr, text }) => {
         flexWrap: "wrap",
         justifyContent: "center",
         alignItems: "center",
-        maxHeight: "80vh",
+        maxHeight: "85vh",
         overflow: "auto",
+        width: "600px",
+        margin: "auto",
       }}
     >
       {arr.map((item) => {

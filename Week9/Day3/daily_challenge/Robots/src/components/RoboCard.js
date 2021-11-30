@@ -10,6 +10,7 @@ const RoboCard = ({ robot }) => {
           fontSize: "12px",
           width: "180px",
           height: "270px",
+          margin: "10px",
         }}
       >
         <Card.Img

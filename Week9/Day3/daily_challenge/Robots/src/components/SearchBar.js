@@ -4,9 +4,14 @@ import { filterArr } from "../actions";
 const SearchBar = ({ filterArr }) => {
   return (
     <div
-      style={{ position: "sticky", top: "0", borderBottom: "2px solid grey" }}
+      style={{
+        position: "sticky",
+        top: "0",
+        borderBottom: "2px solid grey",
+        paddingBottom: "10px",
+      }}
     >
-      <h2> Robot friend</h2>
+      <h3> Robot friend</h3>
 
       <input type="text" onChange={filterArr} />
     </div>
