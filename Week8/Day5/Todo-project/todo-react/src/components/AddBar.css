@@ -1,0 +1,13 @@
+#addBar{
+   
+    background: "none";
+    border: "none";
+    border-bottom: "1px solid gray",
+
+}
+
+#addBar::marker{
+    border: none;
+    border-bottom: "1px solid green",
+
+}
