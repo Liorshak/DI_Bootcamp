@@ -3,11 +3,12 @@ import "./App.css";
 import React from "react";
 import NewBook from "./components/NewBook";
 import UserInput from "./components/UserInput";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 import ProfileScreen from "./components/ProfileScreen";
 import HomeScreen from "./components/HomeScreen";
 import ShopScreen from "./components/ShopScreen";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 class App extends React.Component {
   constructor() {
@@ -127,17 +128,55 @@ class App extends React.Component {
 
   render() {
     return (
-      <Routes>
-        {/* <ErrorBoundary> */}
-        <Route path="/" element={<HomeScreen />} />
-        {/* </ErrorBoundary> */}
-        {/* <ErrorBoundary> */}
-        <Route path="/profile" element={<ProfileScreen />} />
-        {/* </ErrorBoundary> */}
-        {/* <ErrorBoundary> */}
-        <Route path="/shop" element={<ShopScreen />} />
-        {/* </ErrorBoundary> */}
-      </Routes>
+      <div>
+        <nav
+          style={{
+            borderBottom: "solid 1px",
+            paddingBottom: "1rem",
+            margin: "5px",
+          }}
+        >
+          <Link style={{ margin: "5px" }} to="/">
+            Home
+          </Link>
+          <Link style={{ margin: "5px" }} to="/profile">
+            profile
+          </Link>{" "}
+          |{" "}
+          <Link style={{ margin: "5px" }} to="/shop">
+            Shop
+          </Link>
+        </nav>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ErrorBoundary>
+                <HomeScreen />
+              </ErrorBoundary>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <ErrorBoundary>
+                <ProfileScreen />
+              </ErrorBoundary>
+            }
+          />
+
+          <Route
+            path="/shop"
+            element={
+              <ErrorBoundary>
+                <ShopScreen />
+              </ErrorBoundary>
+            }
+          />
+        </Routes>
+
+        <Outlet />
+      </div>
     );
   }
 }
