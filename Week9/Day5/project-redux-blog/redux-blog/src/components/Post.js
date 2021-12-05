@@ -3,7 +3,7 @@ import Home from "./Home";
 import { connect } from "react-redux";
 import { deletePost } from "../actions/postActions";
 
-const Post = ({ postList, deletePost }) => {
+const Post = ({ postList, deletePost, data }) => {
   let params = useParams();
 
   const findpost = (number) => postList.find((post) => post.id === number);
@@ -30,7 +30,7 @@ const Post = ({ postList, deletePost }) => {
                     position: "relative",
                     left: "-7%",
                   }}
-                  onClick={() => deletePost(post.id)}
+                  onClick={() => deletePost(data.id)}
                 >
                   Delete
                 </button>
@@ -38,15 +38,13 @@ const Post = ({ postList, deletePost }) => {
             </div>
           </div>
         </div>
-        <Outlet />
+        {/* <Outlet /> */}
       </>
     );
   } else {
     return (
       <>
-        {postList.map((post) => (
-          <h2>Post number: {parseInt(post.id)}</h2>
-        ))}{" "}
+        <h2>Post number: {parseInt(data.id)}</h2>
         <Outlet />
       </>
     );
